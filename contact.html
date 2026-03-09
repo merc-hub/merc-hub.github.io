@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+        <form id="contactForm">
+            <!-- Personal Information Fieldset -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone (Optional)</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="123-456-7890"
+                    >
+                </div>
+            </fieldset>
+
+            <!-- Message Information Fieldset -->
+            <fieldset>
+                <legend>Message Details</legend>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Select a Subject --</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Customer Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Please enter your message (minimum 50 characters)"
+                        required
+                        minlength="50"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Preferences Fieldset -->
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <div class="form-group checkbox-group">
+                    <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                    >
+                    <label for="newsletter">Subscribe to our newsletter</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Send Message</button>
+
+            <div class="required-note">
+                <strong>*</strong> indicates required fields
+            </div>
+        </form>
+    </div>
+</body>
+</html>
